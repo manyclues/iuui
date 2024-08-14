@@ -26,7 +26,7 @@ jobs:
         with:
           node-version: 16
           registry-url: http://npm.pkg.github.com
-          scope: "@reactslice"
+          scope: "@reactslide"
       - run: npm install
       - run: |
           echo "Listing all environment variables:"
