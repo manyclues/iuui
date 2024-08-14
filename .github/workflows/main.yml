@@ -28,9 +28,6 @@ jobs:
           registry-url: http://npm.pkg.github.com
           scope: "@reactslide"
       - run: npm install
-      - run: |
-          echo "Listing all environment variables:"
-          printenv
       - run: npm run build
       - run: npm publish
     env:
