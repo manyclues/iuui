@@ -3,10 +3,10 @@ name: React components package.
 on:
   push:
     branches:
-      - main
+      - actiontest
   pull_request:
     branches:
-      - main
+      - actiontest
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: "18"
       - run: npm ci
   publish-gpr:
     needs: build
@@ -24,11 +24,11 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: "18"
           registry-url: http://npm.pkg.github.com
           scope: "@reactslice"
       - run: npm install
       - run: npm run build
       - run: npm publish
-    env:
-      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
