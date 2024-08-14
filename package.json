@@ -1,10 +1,13 @@
 {
-  "name": "reactin-ui",
+  "name": "@codecret/reactin-ui",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "./dist/reactin.umd.cjs",
   "module": "./dist/reactin.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "exports": {
     ".": {
       "import": "./dist/reactin.js",
@@ -24,6 +27,18 @@
     "react-dom": "^18.3.1",
     "vite-tsconfig-paths": "^5.0.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReactSlice/reactin-ui.git"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "ReadME.md"
+  ],
   "devDependencies": {
     "@eslint/js": "^9.8.0",
     "@types/node": "^22.2.0",

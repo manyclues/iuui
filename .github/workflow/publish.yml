@@ -1,0 +1,35 @@
+name: React components package.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: npm test
+  publish-gpr:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+          registry-url: http://npm.pkg.github.com
+          scope: "@codecret"
+      - run: npm install
+      - run: npm run build
+      - run: npm publish
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
