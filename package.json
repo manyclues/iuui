@@ -1,5 +1,5 @@
 {
-  "name": "@reactslice/reactin-ui",
+  "name": "@reactslide/reactin-ui",
   "private": false,
   "version": "0.0.5",
   "type": "module",
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ReactSlice/reactin-ui.git"
+    "url": "git+https://github.com/reactslide/reactin-ui.git"
   },
   "peerDependencies": {
     "react": ">=16.0.0"
