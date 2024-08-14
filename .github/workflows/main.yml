@@ -26,7 +26,7 @@ jobs:
         with:
           node-version: 16
           registry-url: http://npm.pkg.github.com
-          scope: "@reactslide"
+          scope: "@reactslice"
       - run: npm install
       - run: npm run build
       - run: npm publish
