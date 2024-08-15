@@ -26,7 +26,7 @@ jobs:
         with:
           node-version: "18"
           registry-url: http://npm.pkg.github.com
-          scope: "@reactslice"
+          scope: "@manyclues"
       - run: npm install
       - run: npm run build
       - run: npm publish

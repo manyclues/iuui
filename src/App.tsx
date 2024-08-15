@@ -1,4 +1,4 @@
-import { Button } from "reactin-ui";
+import { Button } from "iuui";
 
 function App() {
   return (
