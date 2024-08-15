@@ -24,7 +24,6 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@manyclues/iuui": "^0.0.7",
     "path": "^0.12.7",
     "react": ">=16.0.0",
     "react-dom": "^18.3.1",
