@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manyclues/iuui.git"
+    "url": "https://github.com/manyclues/iuui.git"
   },
   "peerDependencies": {
     "react": ">=16.0.0"
