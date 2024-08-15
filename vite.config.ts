@@ -9,8 +9,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "lib/main.ts"),
-      name: "reactin",
-      fileName: "reactin",
+      name: "iuui",
+      fileName: "iuui",
     },
     //for bundle
     rollupOptions: {

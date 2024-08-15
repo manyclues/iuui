@@ -1,17 +1,17 @@
 {
   "name": "@manyclues/iuui",
   "private": false,
-  "version": "0.0.7",
+  "version": "0.0.1",
   "type": "module",
-  "main": "./dist/reactin.umd.cjs",
-  "module": "./dist/reactin.js",
+  "main": "./dist/iuui.umd.cjs",
+  "module": "./dist/iuui.js",
   "publishConfig": {
     ":registry": "https://npm.pkg.github.com"
   },
   "exports": {
     ".": {
-      "import": "./dist/reactin.js",
-      "require": "./dist/reactin.umd.cjs"
+      "import": "./dist/iuui.js",
+      "require": "./dist/iuui.umd.cjs"
     }
   },
   "scripts": {
