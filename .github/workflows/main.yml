@@ -3,10 +3,10 @@ name: React Components Package
 on:
   push:
     branches:
-      - main
+      - actiontest
   pull_request:
     branches:
-      - main
+      - actiontest
 
 jobs:
   build:
