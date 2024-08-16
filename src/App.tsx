@@ -1,9 +1,9 @@
-import { Button } from "iuui";
+import { IUButton } from "iuui";
 
 function App() {
   return (
     <>
-      <Button>Button Example</Button>
+      <IUButton>Button Example</IUButton>
     </>
   );
 }
