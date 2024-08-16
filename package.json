@@ -1,12 +1,12 @@
 {
   "name": "@manyclues/iuui",
   "private": false,
-  "version": "0.0.13",
+  "version": "0.0.15",
   "type": "module",
   "main": "./dist/iuui.umd.cjs",
   "module": "./dist/iuui.js",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com"
   },
   "exports": {
     ".": {
@@ -28,6 +28,10 @@
     "react": ">=16.0.0",
     "react-dom": "^18.3.1",
     "vite-tsconfig-paths": "^5.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manyclues/iuui.git"
   },
   "peerDependencies": {
     "react": ">=16.0.0"
