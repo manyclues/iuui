@@ -1,17 +1,17 @@
 {
-  "name": "iuui",
+  "name": "@manyclues/iuui",
   "private": false,
-  "version": "0.0.19",
+  "version": "0.0.20",
   "type": "module",
-  "main": "./dist/iuui.umd.cjs",
-  "module": "./dist/iuui.js",
+  "main": "./dist/@manyclues/iuui.umd.cjs",
+  "module": "./dist/@manyclues/iuui.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "exports": {
     ".": {
-      "import": "./dist/iuui.js",
-      "require": "./dist/iuui.umd.cjs"
+      "import": "./dist/@manyclues/iuui.js",
+      "require": "./dist/@manyclues/iuui.umd.cjs"
     }
   },
   "scripts": {

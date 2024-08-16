@@ -1,4 +1,4 @@
-import { IUButton } from "iuui";
+import { IUButton } from "@manyclues/iuui";
 
 function App() {
   return (

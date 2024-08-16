@@ -9,8 +9,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "lib/main.ts"),
-      name: "iuui",
-      fileName: "iuui",
+      name: "@manyclues/iuui",
+      fileName: "@manyclues/iuui",
     },
     //for bundle
     rollupOptions: {
