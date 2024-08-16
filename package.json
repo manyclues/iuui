@@ -1,12 +1,12 @@
 {
   "name": "@manyclues/iuui",
   "private": false,
-  "version": "0.0.12",
+  "version": "0.0.13",
   "type": "module",
   "main": "./dist/iuui.umd.cjs",
   "module": "./dist/iuui.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "exports": {
     ".": {
