@@ -3,10 +3,10 @@ name: React Components Package
 on:
   push:
     branches:
-      - main
+      - try
   pull_request:
     branches:
-      - main
+      - try
 
 jobs:
   build:
@@ -43,8 +43,7 @@ jobs:
         with:
           node-version: "18"
           registry-url: https://registry.npmjs.org/
-      - run: npm install
-      - run: npm run build
+      - run: npm ci
       - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_NPM_TOKEN }}
