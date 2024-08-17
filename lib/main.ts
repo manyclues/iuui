@@ -1,2 +1,2 @@
 import "./index.css";
-export { IUButton } from "./Button/IUButton";
+export { IUButton } from "./IUButton/IUButton";
