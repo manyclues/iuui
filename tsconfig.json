@@ -31,9 +31,4 @@
     "src",
     "lib"
   ],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ]
 }
