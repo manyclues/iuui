@@ -1,2 +1,3 @@
 import "./index.css";
-export { IUButton } from "./IUButton/IUButton";
+export { default as IUButton } from "./IUButton/IUButton";
+export { default as IUTextField } from "./IUTextField/IUTextField";
