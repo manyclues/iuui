@@ -1,7 +1,50 @@
 .iu_button {
-  border-radius: 0.6rem;
-  padding: 0.7rem 1rem;
-  border: 0.18rem rgba(0, 0, 0, 0.2) solid;
-  background-color: transparent;
-  font-size: medium;
+  color: var(--iu-color-white);
+  background-color: var(--iu-color-primary);
+  border: none;
+  border-radius: var(--iu-border-radius-base);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* VARIANTS */
+.iu_button--primary {
+  background-color: var(--iu-color-primary);
+}
+
+.iu_button--secondary {
+  background-color: var(--iu-color-secondary);
+}
+
+.iu_button--outlined {
+  border: var(--iu-color-primary) solid var(--iu-border-base);
+  background-color: transparent !important;
+  color: var(--iu-color-primary) !important;
+}
+
+/* SIZES */
+.iu_button--small {
+  font-size: var(--iu-font-size-small);
+  padding: var(--iu-spacing-small) var(--iu-spacing-medium);
+}
+
+.iu_button--medium {
+  font-size: var(--iu-font-size-base);
+  padding: var(--iu-spacing-medium) var(--iu-spacing-large);
+}
+
+.iu_button--large {
+  font-size: var(--iu-font-size-large);
+  padding: var(--iu-spacing-large) var(--iu-spacing-large);
+}
+
+/* STATES */
+.iu_button:hover {
+  opacity: 0.8;
+  transition: all ease-in-out 150ms;
+}
+
+.iu_button:not(:hover) {
+  opacity: 1;
+  transition: all ease-in-out 150ms;
 }

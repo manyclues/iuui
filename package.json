@@ -1,7 +1,7 @@
 {
   "name": "@manyclues/iuui",
   "private": false,
-  "version": "0.0.28",
+  "version": "0.0.29",
   "type": "module",
   "main": "./dist/iuui.umd.cjs",
   "module": "./dist/iuui.js",
@@ -26,6 +26,7 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.0",
     "path": "^0.12.7",
     "react": ">=16.0.0",
     "react-dom": "^18.3.1",
