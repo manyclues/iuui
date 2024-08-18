@@ -1,7 +1,7 @@
 {
   "name": "@manyclues/iuui",
   "private": false,
-  "version": "0.0.17",
+  "version": "0.0.24",
   "type": "module",
   "main": "./dist/iuui.umd.cjs",
   "module": "./dist/iuui.js",
@@ -21,7 +21,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "path": "^0.12.7",
