@@ -12,5 +12,7 @@ type Story = StoryObj<typeof IUButton>;
 export const Default: Story = {
   args: {
     children: "Click Me!",
+    variant: "secondary",
+    size: "small"
   },
 };
