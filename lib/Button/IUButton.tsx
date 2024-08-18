@@ -5,6 +5,8 @@ interface ButtonProps {
   children: ReactNode;
 }
 
-export const IUButton = ({ children }: ButtonProps): ReactNode => {
+const IUButton = ({ children }: ButtonProps): ReactNode => {
   return <button className="iu_button">{children}</button>;
 };
+
+export default IUButton;
