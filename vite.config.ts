@@ -16,13 +16,9 @@ export default defineConfig({
   build: {
     // library entry and output settings
     lib: {
-      entry: [
-        resolve(__dirname, "lib/main.ts"),
-        resolve(__dirname, "lib/IUButton/IUButton.tsx"),
-        resolve(__dirname, "lib/IUTextField/IUTextField.tsx"),
-      ],
-      // name: "iuui",
-      // fileName: "iuui",
+      entry: [resolve(__dirname, "lib/main.ts")],
+      name: "iuui",
+      fileName: "iuui",
     },
     // bundler options
     // externalize react-related imports
