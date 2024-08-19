@@ -10,5 +10,9 @@ export default meta;
 type Story = StoryObj<typeof IUTextField>;
 
 export const Default: Story = {
-  args: {},
+  args: {
+    variant: "outline",
+    size: "md",
+    fieldType: "text",
+  },
 };
