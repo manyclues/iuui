@@ -1,5 +1,38 @@
 .iu_textfield {
-  border: 1px solid rgb(188, 188, 188);
+  border: 1px solid rgba(224, 224, 224, 0.623);
   border-radius: 5px;
   outline: none;
+}
+
+/* variant */
+.iu_outline {
+  border: 1px solid rgba(224, 224, 224, 0.623);
+  border-radius: 5px;
+  outline: none;
+  background-color: none;
+}
+.iu_unstyled {
+  border: none;
+}
+.iu_flushed {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(224, 224, 224, 0.339);
+}
+.iu_filled {
+  background-color: rgba(224, 224, 224, 0.339);
+}
+
+/* size */
+.iu_xsmall {
+  padding: 0.2rem;
+}
+.iu_small {
+  padding: 0.5rem;
+}
+.iu_medium {
+  padding: 0.7rem;
+}
+.iu_large {
+  padding: 1rem;
 }

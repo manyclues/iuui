@@ -10,7 +10,5 @@ export default meta;
 type Story = StoryObj<typeof IUTextField>;
 
 export const Default: Story = {
-  args: {
-    children: "Click Me!",
-  },
+  args: {},
 };
