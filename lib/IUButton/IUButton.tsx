@@ -13,7 +13,7 @@ interface ButtonProps {
     | "elevated"
     | "text";
   size?: "x-small" | "small" | "medium" | "large" | "x-large";
-  disabled: boolean;
+  disabled?: boolean;
 }
 
 const buttonStyles = cva("iu_button", {
