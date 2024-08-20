@@ -1,16 +1,21 @@
 :root {
-  --iu-font-size-base: 1rem; /* 16px */
-  --iu-font-size-small: 0.875rem; /* 14px */
-  --iu-font-size-large: 1.25rem; /* 20px */
+  --iu-font-size-x-small: 0.5625rem; /* 9px */
+  --iu-font-size-small: 0.625rem; /* 10px */
+  --iu-font-size-medium: 0.875rem; /* 14px */
+  --iu-font-size-large: 1rem; /* 16px */
+  --iu-font-size-x-large: 1.25rem; /* 20px */
 
   --iu-spacing-small: 0.5rem; /* 8px */
   --iu-spacing-medium: 1rem; /* 16px */
   --iu-spacing-large: 1.5rem; /* 24px */
+  --iu-spacing-x-large: 2rem; /* 32px */
+  --iu-spacing-2x-large: 2.5rem; /* 40px */
 
   --iu-color-primary: #007bff;
   --iu-color-secondary: #6c757d;
   --iu-color-white: #ffffff;
   --iu-color-black: #000000;
+  --iu-color-shadow: #0000003e;
 
   /* Neutral Colors and Shades */
   --iu-color-neutral-100: #ffffff; /* Light Gray */
