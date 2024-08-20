@@ -1,6 +1,6 @@
 .iu_button {
   color: var(--iu-color-white);
-  background-color: var(--iu-color-primary-300);
+  background-color: var(--iu-color-primary-500);
   border: none;
   border-radius: var(--iu-border-radius-base);
   cursor: pointer;
@@ -9,33 +9,49 @@
 
 /* VARIANTS */
 .iu_button--primary {
-  background-color: var(--iu-color-primary-300);
+  background-color: var(--iu-color-primary-500);
 }
-
 .iu_button--secondary {
   background-color: var(--iu-color-secondary);
 }
-
 .iu_button--outlined {
-  border: var(--iu-color-primary-300) solid var(--iu-border-base);
+  border: var(--iu-color-primary-500) solid var(--iu-border-base);
   background-color: transparent !important;
-  color: var(--iu-color-primary-300) !important;
+  color: var(--iu-color-primary-500) !important;
+}
+.iu_button--tonal {
+  background-color: var(--iu-color-primary-200);
+  opacity: 0.7;
+  color: var(--iu-color-primary-500);
+}
+.iu_button--elevated {
+  filter: drop-shadow(5px 5px 2px var(--iu-color-shadow));
+}
+.iu_button--text {
+  background-color: transparent;
+  color: var(--iu-color-primary-500);
 }
 
 /* SIZES */
+.iu_button--x-small {
+  font-size: var(--iu-font-size-x-small);
+  padding: var(--iu-spacing-small) var(--iu-spacing-small);
+}
 .iu_button--small {
   font-size: var(--iu-font-size-small);
   padding: var(--iu-spacing-small) var(--iu-spacing-medium);
 }
-
 .iu_button--medium {
-  font-size: var(--iu-font-size-base);
+  font-size: var(--iu-font-size-medium);
   padding: var(--iu-spacing-medium) var(--iu-spacing-large);
 }
-
 .iu_button--large {
   font-size: var(--iu-font-size-large);
-  padding: var(--iu-spacing-large) var(--iu-spacing-large);
+  padding: var(--iu-spacing-large) var(--iu-spacing-x-large);
+}
+.iu_button--x-large {
+  font-size: var(--iu-font-size-x-large);
+  padding: var(--iu-spacing-x-large) var(--iu-spacing-2x-large);
 }
 
 /* STATES */
@@ -43,8 +59,12 @@
   opacity: 0.8;
   transition: all ease-in-out 150ms;
 }
-
 .iu_button:not(:hover) {
   opacity: 1;
   transition: all ease-in-out 150ms;
+}
+.iu_button--disabled {
+  opacity: 0.4 !important;
+  transition: none !important;
+  cursor: not-allowed !important;
 }
