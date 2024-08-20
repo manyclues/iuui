@@ -1,6 +1,6 @@
 .iu_button {
   color: var(--iu-color-white);
-  background-color: var(--iu-color-primary);
+  background-color: var(--iu-color-primary-300);
   border: none;
   border-radius: var(--iu-border-radius-base);
   cursor: pointer;
@@ -9,7 +9,7 @@
 
 /* VARIANTS */
 .iu_button--primary {
-  background-color: var(--iu-color-primary);
+  background-color: var(--iu-color-primary-300);
 }
 
 .iu_button--secondary {
@@ -17,9 +17,9 @@
 }
 
 .iu_button--outlined {
-  border: var(--iu-color-primary) solid var(--iu-border-base);
+  border: var(--iu-color-primary-300) solid var(--iu-border-base);
   background-color: transparent !important;
-  color: var(--iu-color-primary) !important;
+  color: var(--iu-color-primary-300) !important;
 }
 
 /* SIZES */
