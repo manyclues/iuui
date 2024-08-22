@@ -4,7 +4,7 @@
   border: none;
   border-radius: var(--iu-border-radius-base);
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all ease-in-out 150ms;
 }
 
 /* VARIANTS */
@@ -17,7 +17,7 @@
 .iu_button--outlined {
   border: var(--iu-color-primary-500) solid var(--iu-border-base);
   background-color: transparent !important;
-  color: var(--iu-color-primary-500) !important;
+  color: var(--iu-color-primary-500);
 }
 .iu_button--tonal {
   background-color: var(--iu-color-primary-200);
@@ -57,11 +57,9 @@
 /* STATES */
 .iu_button:hover {
   opacity: 0.8;
-  transition: all ease-in-out 150ms;
 }
 .iu_button:not(:hover) {
   opacity: 1;
-  transition: all ease-in-out 150ms;
 }
 .iu_button--disabled {
   opacity: 0.4 !important;
