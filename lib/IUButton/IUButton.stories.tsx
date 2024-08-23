@@ -15,5 +15,6 @@ export const Default: Story = {
     variant: "primary",
     size: "medium",
     disabled: false,
+    onClick: () => alert("IU button is clicked"),
   },
 };

@@ -16,6 +16,7 @@ interface ButtonProps {
   size?: "x-small" | "small" | "medium" | "large" | "x-large";
   disabled?: boolean;
   color?: string;
+  onClick?: () => void;
 }
 
 const buttonStyles = cva(["iu_button"], {
@@ -53,6 +54,7 @@ const IUButton = ({
   size = "medium",
   disabled = false,
   color,
+  onClick,
 }: ButtonProps): JSX.Element => {
   let inlineStyles = {};
 
@@ -78,6 +80,7 @@ const IUButton = ({
       })}
       disabled={disabled}
       style={inlineStyles}
+      onClick={!disabled ? onClick : undefined}
     >
       {children}
     </button>
