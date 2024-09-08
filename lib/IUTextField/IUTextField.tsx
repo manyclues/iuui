@@ -8,6 +8,10 @@ interface TextFieldProps {
   placeholder?: string;
   fieldType?: "text" | "email" | "password" | "number";
   borderColor?: string;
+  disabled?: boolean;
+  error: boolean;
+  success: boolean;
+  onClick?: () => void;
 }
 const textFieldStyles = cva("iu_textfield", {
   variants: {
@@ -33,9 +37,13 @@ const textFieldStyles = cva("iu_textfield", {
 const IUTextField = ({
   variant,
   size,
+  onClick,
   placeholder,
   fieldType,
   borderColor,
+  disabled = false,
+  error = false,
+  success = false,
 }: TextFieldProps): ReactNode => {
   return (
     <input
@@ -43,8 +51,14 @@ const IUTextField = ({
       className={textFieldStyles({ variant, size })}
       placeholder={placeholder ? placeholder : ""}
       style={{
-        borderColor: borderColor || "initial",
+        borderColor: error
+          ? "red"
+          : success
+            ? "green"
+            : borderColor || "initial",
       }}
+      disabled={disabled}
+      onClick={onClick}
     />
   );
 };
