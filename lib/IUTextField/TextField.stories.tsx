@@ -11,8 +11,12 @@ type Story = StoryObj<typeof IUTextField>;
 
 export const Default: Story = {
   args: {
-    variant: "outline",
-    size: "md",
+    variant: "flushed",
+    size: "lg",
     fieldType: "text",
+    borderColor: "#757575",
+    disabled: false,
+    error: false,
+    success: false
   },
 };
