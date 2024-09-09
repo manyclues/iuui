@@ -1,12 +1,12 @@
 .iu_textfield {
-  border: 1px solid rgba(224, 224, 224, 0.623);
+  border: 1px solid var(--iu-color-secondary-400);
   border-radius: 5px;
   outline: none;
 }
 
 /* variant */
 .iu_outline {
-  border: 1px solid rgba(224, 224, 224, 0.623);
+  border: 1px solid var(--iu-color-secondary-400);
   border-radius: 5px;
   outline: none;
   background-color: none;
@@ -17,10 +17,10 @@
 .iu_flushed {
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid rgba(224, 224, 224, 0.339);
+  border-bottom: 1px solid var(--iu-color-secondary-400);
 }
 .iu_filled {
-  background-color: rgba(224, 224, 224, 0.339);
+  background-color: var(--iu-color-secondary-400);
 }
 
 /* size */

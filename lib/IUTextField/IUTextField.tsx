@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { CSSProperties, ReactNode } from "react";
 import "./iu-textfield.css";
 import { cva } from "class-variance-authority";
 
@@ -8,6 +8,12 @@ interface TextFieldProps {
   placeholder?: string;
   fieldType?: "text" | "email" | "password" | "number";
   borderColor?: string;
+  disabled?: boolean;
+  error: boolean;
+  success: boolean;
+  onClick?: () => void;
+  className?: string;
+  style?: CSSProperties;
 }
 const textFieldStyles = cva("iu_textfield", {
   variants: {
@@ -33,18 +39,31 @@ const textFieldStyles = cva("iu_textfield", {
 const IUTextField = ({
   variant,
   size,
+  onClick,
   placeholder,
   fieldType,
   borderColor,
+  disabled = false,
+  error = false,
+  success = false,
+  className = "",
+  style = {},
 }: TextFieldProps): ReactNode => {
   return (
     <input
       type={fieldType || "text"}
-      className={textFieldStyles({ variant, size })}
+      className={`${textFieldStyles({ variant, size })} ${className}`}
       placeholder={placeholder ? placeholder : ""}
       style={{
-        borderColor: borderColor || "initial",
+        borderColor: error
+          ? "red"
+          : success
+            ? "green"
+            : borderColor || "transparent",
+        ...style,
       }}
+      disabled={disabled}
+      onClick={onClick}
     />
   );
 };
